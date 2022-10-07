@@ -1,0 +1,5 @@
+stepDefinetions\AmazonStepDefination.class
+pages\AmazonPage.class
+utilities\ConfigReader.class
+runners\Runner.class
+utilities\Driver.class
