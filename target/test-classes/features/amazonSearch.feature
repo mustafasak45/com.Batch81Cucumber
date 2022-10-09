@@ -1,3 +1,4 @@
+@All
 Feature: Amazon Search
   @gp1
   Scenario: TC01 kullanici amazonda nutella aratir

@@ -1,5 +1,8 @@
+pages\SauceDemoPage.class
+stepDefinetions\SaucedemoDefination.class
 stepDefinetions\AmazonStepDefination.class
 pages\AmazonPage.class
-utilities\ConfigReader.class
+runners\Runner2.class
 runners\Runner.class
 utilities\Driver.class
+utilities\ConfigReader.class
