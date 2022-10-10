@@ -9,6 +9,7 @@ import org.openqa.selenium.Keys;
 import pages.AmazonPage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class AmazonStepDefination {
     AmazonPage amazonPage=new AmazonPage();
@@ -55,6 +56,32 @@ public class AmazonStepDefination {
     @And("Sonuclarin iphone icerdigini test eder")
     public void sonuclarinIphoneIcerdiginiTestEder() {
         Assert.assertTrue( amazonPage.aramaSonucWE.getText().contains("iphone"));
+    }
+    @Then("Kullanici {string} aratir")
+    public void kullaniciAratir(String arananKelime) { //burada parametre girdik feature dosyasında "" içinde
+                                                        // yazdıgımızı burada parametre alacaktır
+        amazonPage.aramaKutusu.sendKeys(arananKelime,Keys.ENTER);
+    }
+    @And("Sonuclarin {string} icerdigini test eder")
+    public void sonuclarinIcerdiginiTestEder(String arananKelime) {//burada parametre girdik feature dosyasında "" içinde
+        // yazdıgımızı burada parametre alacaktır
+        String actualKelime=amazonPage.aramaSonucWE.getText();
+        Assert.assertTrue(actualKelime.contains(arananKelime));
+    }
 
+    @Given("Kullanici {string} sayfasina gider")
+    public void kullaniciSayfasinaGider(String arananUrl) {
+        Driver.getDriver().get(ConfigReader.getProperty(arananUrl));
+    }
+
+    @Then("Kullanici {int} saniye bekler")
+    public void kullaniciSaniyeBekler(int saniye) {
+        ReusableMethods.waitFor(saniye);
+    }
+
+    @And("Url {string} icerdigine bakar")
+    public void urlIcerdigineBakar(String expectedUrl) {
+        String actualUrl=Driver.getDriver().getCurrentUrl();
+        Assert.assertTrue(actualUrl.contains(expectedUrl));
     }
 }

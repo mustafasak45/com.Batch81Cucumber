@@ -1,8 +1,15 @@
 pages\SauceDemoPage.class
-stepDefinetions\SaucedemoDefination.class
+stepDefinetions\MakasSearchStepDefination.class
 stepDefinetions\AmazonStepDefination.class
 pages\AmazonPage.class
-runners\Runner2.class
+pages\MorhipoPage.class
 runners\Runner.class
+utilities\ReusableMethods$1.class
 utilities\Driver.class
+pages\GooglePage.class
+stepDefinetions\TutorialsNinjaStepDefination.class
 utilities\ConfigReader.class
+pages\TutorialsNinjaPages.class
+stepDefinetions\SaucedemoStepDefination.class
+pages\TrenyolPage.class
+utilities\ReusableMethods.class

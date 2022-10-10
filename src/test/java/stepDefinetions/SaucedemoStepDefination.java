@@ -9,7 +9,7 @@ import pages.SauceDemoPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class SaucedemoDefination {
+public class SaucedemoStepDefination {
     SauceDemoPage sauceDemoPage=new SauceDemoPage();
 
     @Given("Sauce Sitesine girer")
