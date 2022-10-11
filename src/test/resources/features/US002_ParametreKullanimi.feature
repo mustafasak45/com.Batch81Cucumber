@@ -11,9 +11,9 @@ Feature: US002 Parametre Kullanimi
     And Sonuclarin "nutella" icerdigini test eder
     And Sayfayi kapatir
 
+
   Scenario: TC02 Kullanici amazonda parametre arama yapar
 
-    Given Kullanici amazon sayfasina gider
-    Then Kullanici "SQL" aratir
-    And Sonuclarin "SQL" icerdigini test eder
+    Then Kullanici "makas" aratir
+    And Sonuclarin "makas" icerdigini test eder
     And Sayfayi kapatir
