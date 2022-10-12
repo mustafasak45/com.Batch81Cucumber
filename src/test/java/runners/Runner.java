@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "stepDefinetions",
         //tags = "@gp1 or @gp2",              //gruplandırma yaptık @gp1 or @gp2 adında
-        tags = "@parametre",                //@Background yazan feature'yi calistirir
+        tags = "@PracticeTC07_01",                //@Background yazan feature'yi calistirir
         dryRun = false                        //true yapınca browser'i calistirmadan test eder
 )
 

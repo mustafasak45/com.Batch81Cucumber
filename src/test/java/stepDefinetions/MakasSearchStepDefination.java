@@ -76,4 +76,9 @@ public class MakasSearchStepDefination {
     public void acikKalanDigerSayfadaKapatildi() {
         Driver.quitDriver();
     }
+
+    @Given("Kullanici {string} sayfasina gider.")
+    public void kullaniciSayfasinaGider(String Url) {
+        Driver.getDriver().get(Url);
+    }
 }

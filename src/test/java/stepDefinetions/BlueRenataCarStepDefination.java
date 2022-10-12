@@ -38,6 +38,6 @@ public class BlueRenataCarStepDefination {
 
     @Then("sayfaya giris yapilamadigini kontrol eder")
     public void sayfayaGirisYapilamadiginiKontrolEder() {
-        Assert.assertFalse(blueRentACarsPage.ddm.isDisplayed());
+        Assert.assertTrue(blueRentACarsPage.ikinciLogin.isDisplayed());
     }
 }

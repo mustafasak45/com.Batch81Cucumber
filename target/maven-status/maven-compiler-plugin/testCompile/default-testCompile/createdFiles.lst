@@ -2,11 +2,13 @@ pages\SauceDemoPage.class
 stepDefinetions\AmazonStepDefination.class
 pages\BlueRentACarsPage.class
 utilities\ReusableMethods$1.class
+stepDefinetions\AutomationExerciseStepDefinitions.class
 stepDefinetions\BlueRenataCarStepDefination.class
 pages\GooglePage.class
 stepDefinetions\SaucedemoStepDefination.class
 utilities\ReusableMethods.class
 stepDefinetions\MakasSearchStepDefination.class
+pages\dd.class
 pages\AmazonPage.class
 pages\MorhipoPage.class
 runners\Runner.class
