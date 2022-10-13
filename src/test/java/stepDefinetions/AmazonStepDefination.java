@@ -1,15 +1,19 @@
 package stepDefinetions;
 
+import com.github.javafaker.Faker;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.apache.hc.core5.util.Asserts;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
 import pages.AmazonPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
+
+import java.io.IOException;
 
 public class AmazonStepDefination {
     AmazonPage amazonPage=new AmazonPage();
@@ -83,5 +87,66 @@ public class AmazonStepDefination {
     public void urlIcerdigineBakar(String expectedUrl) {
         String actualUrl=Driver.getDriver().getCurrentUrl();
         Assert.assertTrue(actualUrl.contains(expectedUrl));
+    }
+
+    @And("Sign in butonuna tiklar")
+    public void signInButonunaTiklar() {
+    amazonPage.signinDdm.click();
+
+    }
+
+    @And("Faker kullanarak e-posta gonderir")
+    public void fakerKullanarakEPostaGonderir() {
+        Faker faker=new Faker();
+        amazonPage.epostaBox.sendKeys(faker.internet().emailAddress(),Keys.ENTER);
+
+
+    }
+
+    @And("Gonderdigi e-postanin ekran goruntusunu alir")
+    public void gonderdigiEPostaninEkranGoruntusunuAlir() throws IOException {
+        ReusableMethods.getScreenshotWebElement("eposta",amazonPage.epostaBox);
+    }
+
+    @And("Continiue'a tiklar")
+    public void continiueATiklar() {
+        amazonPage.continueButton.click();
+    }
+
+    @Then("There was a problem mesajini dogrular")
+    public void thereWasAProblemMesajiniDogrular() {
+        Assert.assertTrue(Driver.getDriver().getPageSource().contains("There was a problem"));
+
+    }
+    @And("Need help e tiklar")
+    public void needHelpETiklar() {
+        amazonPage.needHelp.click();
+    }
+
+    @And("Forgot your password e tiklar")
+    public void forgotYourPasswordETiklar() {
+        amazonPage.forgotYourPass.click();
+
+    }
+    @And("Password assistance metnini dogrular")
+    public void passwordAssistanceMetniniDogrular() {
+        Assert.assertTrue(Driver.getDriver().getPageSource().contains("Password assistance"));
+    }
+
+    @And("Geri gider")
+    public void geriGider() {
+        Driver.getDriver().navigate().back();
+    }
+
+    @And("Create your account butonuna tiklar")
+    public void createYourAccountButonunaTiklar() {
+        amazonPage.createYourAmznAccount.click();
+
+    }
+
+    @Then("Create account metnini dogrular")
+    public void createAccountMetniniDogrular() {
+        Assert.assertTrue(Driver.getDriver().getPageSource().contains("Create account"));
+
     }
 }

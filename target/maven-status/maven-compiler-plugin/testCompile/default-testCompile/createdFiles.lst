@@ -8,12 +8,13 @@ pages\GooglePage.class
 stepDefinetions\SaucedemoStepDefination.class
 utilities\ReusableMethods.class
 stepDefinetions\MakasSearchStepDefination.class
-pages\dd.class
 pages\AmazonPage.class
 pages\MorhipoPage.class
 runners\Runner.class
 utilities\Driver.class
 stepDefinetions\TutorialsNinjaStepDefination.class
 utilities\ConfigReader.class
+pages\EditorDatabasePage.class
 pages\TutorialsNinjaPages.class
 pages\TrenyolPage.class
+stepDefinetions\EditorDatabaseStepdefinition.class

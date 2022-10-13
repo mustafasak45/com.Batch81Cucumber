@@ -3,6 +3,7 @@ package stepDefinetions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.junit.Assert;
 import pages.BlueRentACarsPage;
 import utilities.ConfigReader;
@@ -21,15 +22,6 @@ public class BlueRenataCarStepDefination {
 
     }
 
-    @And("gecersiz username girer")
-    public void gecersizUsernameGirer() {
-        blueRentACarsPage.emailTextbox.sendKeys(ConfigReader.getProperty("wrongEmailBlueRentalCars"));
-    }
-
-    @And("gecersiz password girer")
-    public void gecersizPasswordGirer() {
-        blueRentACarsPage.passwordTextbox.sendKeys(ConfigReader.getProperty("wrongPasswordBlueRentalCars"));
-    }
 
     @And("Login butonuna basar")
     public void loginButonunaBasar() {
@@ -40,4 +32,15 @@ public class BlueRenataCarStepDefination {
     public void sayfayaGirisYapilamadiginiKontrolEder() {
         Assert.assertTrue(blueRentACarsPage.ikinciLogin.isDisplayed());
     }
+
+    @And("{string} username girer")
+    public void usernameGirer(String username) {
+        blueRentACarsPage.emailTextbox.sendKeys(username);
+    }
+
+    @And("{string} password girer")
+    public void passwordGirer(String pass) {
+        blueRentACarsPage.passwordTextbox.sendKeys(pass);
+    }
+
 }
