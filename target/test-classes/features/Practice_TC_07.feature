@@ -1,3 +1,4 @@
+@Practice_TC_07
 Feature: TC Verify Test Case
   @practice
   Scenario: TC_07_Test_Cases

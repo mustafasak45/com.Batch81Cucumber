@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.196">
+    <testcase classname="US004 Parametre Kullanimi" name="TC01 Parametre Kullanimi" time="10.842">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Given Kullanici "morhipoUrl" sayfasina gider................................passed
+Then Kullanici 3 saniye bekler..............................................passed
+When Url "asdf" icerdigine bakar............................................failed
+And Sayfayi kapatir.........................................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepDefinetions.AmazonStepDefination.urlIcerdigineBakar(AmazonStepDefination.java:89)
+	at ✽.Url "asdf" icerdigine bakar(file:///C:/Users/myComputeR/IdeaProjects/com.Batch81Cucumber/src/test/resources/features/US013_HataAlipFotoluRaporlama.feature:7)
+]]></failure>
+    </testcase>
+</testsuite>

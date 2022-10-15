@@ -78,7 +78,7 @@ public class MakasSearchStepDefination {
     }
 
     @Given("Kullanici {string} sayfasina gider.")
-    public void kullaniciSayfasinaGider(String Url) {
-        Driver.getDriver().get(Url);
+    public void kullaniciSayfasinaGider(String guruUrl) {
+        Driver.getDriver().get(ConfigReader.getProperty(guruUrl));
     }
 }
