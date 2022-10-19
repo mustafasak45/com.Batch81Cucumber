@@ -38,9 +38,8 @@ public class DemoStepDefinition {
     @And("kullanici Allertin gorunur olmasini bekler")
     public void kullaniciAllertinGorunurOlmasiniBekler() {
 
-//            wait.until(ExpectedConditions.alertIsPresent());
-//            alertText= Driver.getDriver().switchTo().alert().getText();
-
+            wait.until(ExpectedConditions.alertIsPresent());
+            alertText= Driver.getDriver().switchTo().alert().getText();
 
 
     }

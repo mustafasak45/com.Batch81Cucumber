@@ -4,10 +4,15 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.WebPage;
 import utilities.Driver;
 
+import java.time.Duration;
 import java.util.ArrayList;
 
 public class WebDriverStepDefinition {
@@ -16,6 +21,7 @@ public class WebDriverStepDefinition {
 
     ArrayList<String> windows;
     String ilkWindow;
+    String actualPopupText;
 
     @Then("kullanici Login Portala kadar asagi iner")
     public void kullaniciLoginPortalaKadarAsagiIner() {
@@ -48,13 +54,14 @@ public class WebDriverStepDefinition {
     @And("kullanici login butonuna basar")
     public void kullaniciLoginButonunaBasar() {
         actions.sendKeys(Keys.TAB).sendKeys(Keys.ENTER).perform();
+        actualPopupText = Driver.getDriver().switchTo().alert().getText();
+
     }
 
     @And("kullanici Popup'ta cikan yazinin validation failed oldugunu test eder")
     public void kullaniciPopupTaCikanYazininValidationFailedOldugunuTestEder() {
 
 
-        String actualPopupText = Driver.getDriver().switchTo().alert().getText();
         System.out.println("POP TEXT="+ actualPopupText);
         String expectedPopupText = "validation failed";
         Assert.assertEquals(expectedPopupText, actualPopupText);

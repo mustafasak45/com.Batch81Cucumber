@@ -11,9 +11,11 @@ stepDefinetions\PracticeTestPageStepDefs.class
 stepDefinetions\GuruStepDefinition.class
 runners\Runner.class
 runners\TestRunner.class
+stepDefinetions\MedunnaNegativeStepDefs.class
 utilities\Driver.class
 stepDefinetions\TutorialsNinjaStepDefination.class
 stepDefinetions\PracticeFormStepDefs.class
+pages\MedunnaPage.class
 runners\TestRunner2.class
 stepDefinetions\DemoStepDefinition.class
 stepDefinetions\AutoStepDefinition.class
