@@ -1,11 +1,14 @@
 C:\Users\myComputeR\IdeaProjects\com.Batch81Cucumber\src\test\java\stepDefinetions\AutomationExerciseStepDefinitions.java
+C:\Users\myComputeR\IdeaProjects\com.Batch81Cucumber\src\test\java\pages\DemoPage.java
 C:\Users\myComputeR\IdeaProjects\com.Batch81Cucumber\src\test\java\pages\BlueRentACarsPage.java
 C:\Users\myComputeR\IdeaProjects\com.Batch81Cucumber\src\test\java\pages\MorhipoPage.java
 C:\Users\myComputeR\IdeaProjects\com.Batch81Cucumber\src\test\java\utilities\ConfigReader.java
 C:\Users\myComputeR\IdeaProjects\com.Batch81Cucumber\src\test\java\utilities\ReusableMethods.java
 C:\Users\myComputeR\IdeaProjects\com.Batch81Cucumber\src\test\java\stepDefinetions\MakasSearchStepDefination.java
+C:\Users\myComputeR\IdeaProjects\com.Batch81Cucumber\src\test\java\stepDefinetions\PracticeFormStepDefs.java
 C:\Users\myComputeR\IdeaProjects\com.Batch81Cucumber\src\test\java\stepDefinetions\GuruStepDefinition.java
 C:\Users\myComputeR\IdeaProjects\com.Batch81Cucumber\src\test\java\runners\TestRunner.java
+C:\Users\myComputeR\IdeaProjects\com.Batch81Cucumber\src\test\java\stepDefinetions\AutoStepDefinition.java
 C:\Users\myComputeR\IdeaProjects\com.Batch81Cucumber\src\test\java\pages\SauceDemoPage.java
 C:\Users\myComputeR\IdeaProjects\com.Batch81Cucumber\src\test\java\stepDefinetions\SaucedemoStepDefination.java
 C:\Users\myComputeR\IdeaProjects\com.Batch81Cucumber\src\test\java\pages\WebPage.java
@@ -14,6 +17,7 @@ C:\Users\myComputeR\IdeaProjects\com.Batch81Cucumber\src\test\java\pages\Herokua
 C:\Users\myComputeR\IdeaProjects\com.Batch81Cucumber\src\test\java\pages\TutorialsNinjaPages.java
 C:\Users\myComputeR\IdeaProjects\com.Batch81Cucumber\src\test\java\pages\TrenyolPage.java
 C:\Users\myComputeR\IdeaProjects\com.Batch81Cucumber\src\test\java\stepDefinetions\WebDriverStepDefinition.java
+C:\Users\myComputeR\IdeaProjects\com.Batch81Cucumber\src\test\java\pages\PracticeFormPage.java
 C:\Users\myComputeR\IdeaProjects\com.Batch81Cucumber\src\test\java\stepDefinetions\AmazonStepDefination.java
 C:\Users\myComputeR\IdeaProjects\com.Batch81Cucumber\src\test\java\runners\TestRunner2.java
 C:\Users\myComputeR\IdeaProjects\com.Batch81Cucumber\src\test\java\stepDefinetions\PracticeTestPageStepDefs.java
@@ -22,7 +26,9 @@ C:\Users\myComputeR\IdeaProjects\com.Batch81Cucumber\src\test\java\stepDefinetio
 C:\Users\myComputeR\IdeaProjects\com.Batch81Cucumber\src\test\java\utilities\Driver.java
 C:\Users\myComputeR\IdeaProjects\com.Batch81Cucumber\src\test\java\pages\GooglePage.java
 C:\Users\myComputeR\IdeaProjects\com.Batch81Cucumber\src\test\java\stepDefinetions\BlueRenataCarStepDefination.java
+C:\Users\myComputeR\IdeaProjects\com.Batch81Cucumber\src\test\java\stepDefinetions\DemoStepDefinition.java
 C:\Users\myComputeR\IdeaProjects\com.Batch81Cucumber\src\test\java\pages\EditorDatabasePage.java
 C:\Users\myComputeR\IdeaProjects\com.Batch81Cucumber\src\test\java\pages\AmazonPage.java
 C:\Users\myComputeR\IdeaProjects\com.Batch81Cucumber\src\test\java\stepDefinetions\EditorDatabaseStepdefinition.java
+C:\Users\myComputeR\IdeaProjects\com.Batch81Cucumber\src\test\java\pages\AutoPage.java
 C:\Users\myComputeR\IdeaProjects\com.Batch81Cucumber\src\test\java\pages\GuruPage.java

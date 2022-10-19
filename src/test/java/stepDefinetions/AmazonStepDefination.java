@@ -132,16 +132,13 @@ public class AmazonStepDefination {
     public void passwordAssistanceMetniniDogrular() {
         Assert.assertTrue(Driver.getDriver().getPageSource().contains("Password assistance"));
     }
-
     @And("Geri gider")
     public void geriGider() {
         Driver.getDriver().navigate().back();
     }
-
     @And("Create your account butonuna tiklar")
     public void createYourAccountButonunaTiklar() {
         amazonPage.createYourAmznAccount.click();
-
     }
 
     @Then("Create account metnini dogrular")

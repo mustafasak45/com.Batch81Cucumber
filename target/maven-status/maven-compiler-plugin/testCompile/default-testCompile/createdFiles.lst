@@ -1,5 +1,6 @@
 pages\SauceDemoPage.class
 stepDefinetions\AmazonStepDefination.class
+pages\DemoPage.class
 pages\BlueRentACarsPage.class
 pages\WebPage.class
 stepDefinetions\BlueRenataCarStepDefination.class
@@ -12,7 +13,10 @@ runners\Runner.class
 runners\TestRunner.class
 utilities\Driver.class
 stepDefinetions\TutorialsNinjaStepDefination.class
+stepDefinetions\PracticeFormStepDefs.class
 runners\TestRunner2.class
+stepDefinetions\DemoStepDefinition.class
+stepDefinetions\AutoStepDefinition.class
 pages\TrenyolPage.class
 stepDefinetions\EditorDatabaseStepdefinition.class
 utilities\ReusableMethods$1.class
@@ -23,6 +27,8 @@ stepDefinetions\AutomationExerciseStepDefinitions.class
 pages\GooglePage.class
 stepDefinetions\SaucedemoStepDefination.class
 utilities\ReusableMethods.class
+pages\PracticeFormPage.class
+pages\AutoPage.class
 pages\MorhipoPage.class
 utilities\ConfigReader.class
 pages\EditorDatabasePage.class

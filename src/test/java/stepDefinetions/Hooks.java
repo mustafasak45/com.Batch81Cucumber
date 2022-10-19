@@ -13,7 +13,7 @@ public class Hooks {  //TC de fail aldığımızda raporda ekran fotosu almak i�
             Driver.getDriver()).getScreenshotAs(OutputType.BYTES);  if (scenario.isFailed()) {
         scenario.attach(screenshot, "image/png","screenshots");
     }
-        Driver.closeDriver();
+      //  Driver.closeDriver();
     }
 
 }
