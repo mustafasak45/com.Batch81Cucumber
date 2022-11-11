@@ -18,18 +18,14 @@ public class EditorDatabaseStepdefinition {
     public void kullaniciEditorDatatablesNetAdresineGider() {
         Driver.getDriver().get("https://editor.datatables.net/");
     }
-
     @Then("new butonuna basar")
     public void newButonunaBasar() {
         editorDatabasePage.newButton.click();
     }
-
     @And("{string} girer")
     public void girer(String enter) {
-
         editorDatabasePage.textBoxList.get(i).sendKeys(enter, Keys.TAB);
         ReusableMethods.waitFor(1);
-
         i++;
     }
 

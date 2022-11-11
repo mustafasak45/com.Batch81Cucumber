@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="20.569">
-    <testcase classname="US016 Class Work4" name="TC01 alerts and explicitly wait" time="19.927">
-        <failure message="unexpected alert open: {Alert text : This alert appeared after 5 seconds}&#10;  (Session info: chrome=106.0.5249.119): This alert appeared after 5 seconds&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'MUSTAFA', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [d048fde816447964312909d70dcccbe2, maximizeCurrentWindow {}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\MYCOMP~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65349}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65349/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d048fde816447964312909d70dcccbe2" type="org.openqa.selenium.UnhandledAlertException"><![CDATA[Given Kullanici "demoUrl" sayfasina gider...................................passed
-And Kullanici 4 saniye bekler...............................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="19.311">
+    <testcase classname="US016 Class Work4" name="TC01 alerts and explicitly wait" time="18.885">
+        <failure message="unexpected alert open: {Alert text : This alert appeared after 5 seconds}&#10;  (Session info: chrome=106.0.5249.119): This alert appeared after 5 seconds&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'MUSTAFA', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [198a98691b258ad952ea5b5136f771d5, maximizeCurrentWindow {}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\MYCOMP~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52699}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52699/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 198a98691b258ad952ea5b5136f771d5" type="org.openqa.selenium.UnhandledAlertException"><![CDATA[Given Kullanici "demoUrl" sayfasina gider...................................passed
+And Kullanici 1 saniye bekler...............................................passed
 When kullanici Alerts buttonuna tiklar......................................passed
-And Kullanici 2 saniye bekler...............................................passed
+And Kullanici 1 saniye bekler...............................................passed
 And kullanici On button click, alert will appear after bes seconds karsisindaki click me  butonuna basar.passed
-And kullanici Allertin gorunur olmasini bekler..............................passed
-And kullanici Allert uzerindeki yazinin This alert appeared after bes seconds oldugunu test eder.passed
-And kullanici ok diyerek alerti kapatir.....................................passed
+And Kullanici 5 saniye bekler...............................................passed
+And kullanici Allertin gorunur olmasini bekler..............................failed
+And Kullanici 8 saniye bekler...............................................skipped
+And kullanici Allert uzerindeki yazinin This alert appeared after bes seconds oldugunu test eder.skipped
+And kullanici ok diyerek alerti kapatir.....................................skipped
 
 StackTrace:
 org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : This alert appeared after 5 seconds}
   (Session info: chrome=106.0.5249.119): This alert appeared after 5 seconds
 Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'MUSTAFA', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+System info: host: 'MUSTAFA', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d048fde816447964312909d70dcccbe2, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\MYCOMP~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65349}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65349/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d048fde816447964312909d70dcccbe2
+Command: [198a98691b258ad952ea5b5136f771d5, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\MYCOMP~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52699}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52699/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 198a98691b258ad952ea5b5136f771d5
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
@@ -29,7 +31,8 @@ Session ID: d048fde816447964312909d70dcccbe2
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
 	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:984)
 	at utilities.Driver.getDriver(Driver.java:44)
-	at stepDefinetions.Hooks.tearDown(Hooks.java:13)
+	at stepDefinetions.DemoStepDefinition.kullaniciAllertinGorunurOlmasiniBekler(DemoStepDefinition.java:42)
+	at ✽.kullanici Allertin gorunur olmasini bekler(file:///C:/Users/myComputeR/IdeaProjects/com.Batch81Cucumber/src/test/resources/features/US016_ExplicitlyWaitAlert.feature:11)
 ]]></failure>
     </testcase>
 </testsuite>
