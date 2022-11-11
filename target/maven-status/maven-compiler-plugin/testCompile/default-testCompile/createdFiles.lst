@@ -1,9 +1,11 @@
 pages\SauceDemoPage.class
 stepDefinetions\AmazonStepDefination.class
+stepDefinetions\GridStepDefs.class
 pages\DemoPage.class
 pages\BlueRentACarsPage.class
 pages\WebPage.class
 stepDefinetions\BlueRenataCarStepDefination.class
+runners\RunnerGrid.class
 pages\HerokuappPage.class
 stepDefinetions\MakasSearchStepDefination.class
 pages\AmazonPage.class
