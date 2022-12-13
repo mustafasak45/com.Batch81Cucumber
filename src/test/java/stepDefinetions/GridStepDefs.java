@@ -17,7 +17,7 @@ public class GridStepDefs {
     @Given("user is on the application_url {string}")
     public void user_is_on_the_application_url(String url) throws MalformedURLException {
 
-        driver = new RemoteWebDriver(new URL("http://192.168.1.103:4444"),new ChromeOptions());
+        driver = new RemoteWebDriver(new URL("http://192.168.1.103:4444"),new ChromeOptions());//jenkinsin urlsi yazılır
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().window().maximize();
         driver.get(url);
@@ -31,9 +31,7 @@ public class GridStepDefs {
     @Then("close the remote driver")
     public void close_the_remote_driver() {
         driver.quit();
-
     }
-
     @Given("user is on the application_url with Firefox {string}")
     public void userIsOnTheApplication_urlWithFirefox(String url) throws MalformedURLException {
         driver = new RemoteWebDriver(new URL("http://192.168.1.103:4444"),new FirefoxOptions());

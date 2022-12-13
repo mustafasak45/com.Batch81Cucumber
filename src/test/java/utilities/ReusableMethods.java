@@ -160,4 +160,9 @@ public class ReusableMethods {
             waitFor(1);
         }
     }
+    public static void zoomInOut(int zoom) {
+
+        JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
+        js.executeScript("document.body.style.zoom='" + zoom + "%'");
+    }
 }

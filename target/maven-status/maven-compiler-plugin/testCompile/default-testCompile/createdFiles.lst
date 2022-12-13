@@ -6,6 +6,7 @@ pages\BlueRentACarsPage.class
 pages\WebPage.class
 stepDefinetions\BlueRenataCarStepDefination.class
 runners\RunnerGrid.class
+stepDefinetions\denemeStepDefs.class
 pages\HerokuappPage.class
 stepDefinetions\MakasSearchStepDefination.class
 pages\AmazonPage.class
